@@ -1,0 +1,14 @@
+name: 'ABC'
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  steve:
+    runs-on: ubuntu
+    steps:
+      - name: Demonstrate arbitrary code execution
+        shell: bash
+        run: |
+          echo "hi :)"
